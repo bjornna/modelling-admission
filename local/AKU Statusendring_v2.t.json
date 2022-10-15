@@ -3,7 +3,12 @@
   "uid" : "53e43948-65b1-4a3e-9725-4321166955a6",
   "description" : {
     "@type" : "RESOURCE_DESCRIPTION",
-    "originalAuthor" : { },
+    "originalAuthor" : {
+      "name" : "Bjørn Næss",
+      "organisation" : "DIPS AS",
+      "email" : "bna@dips.no",
+      "date" : "2014-03-01"
+    },
     "otherContributors" : [ ],
     "lifecycleState" : {
       "codeString" : "Initial"
