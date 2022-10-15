@@ -1,0 +1,129 @@
+archetype (adl_version=1.4; uid=86b36c0b-30a9-3a28-9428-cde7a2022231)
+	openEHR-EHR-ACTION.emergency_follow_up.v1
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::nb]>
+	translations = <
+		["no"] = <
+			language = <[ISO_639-1::no]>
+			author = <
+				["name"] = <"?">
+			>
+		>
+	>
+
+description
+	original_author = <
+		["date"] = <"2014-02-26">
+		["name"] = <"Bjørn Næss">
+		["organisation"] = <"DIPS ASA">
+		["email"] = <"bna@dips.no">
+	>
+	lifecycle_state = <"0">
+	details = <
+		["no"] = <
+			language = <[ISO_639-1::no]>
+			purpose = <"Angir videre oppfølging for pasient ved akuttmottaket på OUS">
+		>
+		["nb"] = <
+			language = <[ISO_639-1::nb]>
+			purpose = <"Angir videre oppfølging for pasient ved akuttmottaket på OUS">
+		>
+	>
+	other_details = <
+		["MD5-CAM-1.0.1"] = <"54A49BB386F55F16DA078C4273DF1D15">
+		["build_uid"] = <"4fe93982-3a69-3641-8009-72f9e9be8e59">
+	>
+
+definition
+	ACTION[at0000] matches {    -- Skal til
+		ism_transition matches {
+			ISM_TRANSITION[at0004] matches {    -- Oppfølging angitt
+				current_state matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[openehr::532]
+						}
+					}
+				}
+				careflow_step matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::at0004]    -- Oppfølging angitt
+						}
+					}
+				}
+			}
+		}
+		description matches {
+			ITEM_TREE[at0001] matches {    -- Tree
+				items cardinality matches {0..*; unordered} matches {
+					ELEMENT[at0002] occurrences matches {0..1} matches {    -- Skal til
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0003] occurrences matches {0..1} matches {    -- Beskrivelse
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["no"] = <
+			items = <
+				["at0000"] = <
+					text = <"Skal til">
+					description = <"Angir videre oppfølging for pasient ved akuttmottaket på OUS">
+				>
+				["at0001"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Skal til">
+					description = <"Behandlingssted pasientens er planlagt til. Behøver ikke være meldt. ">
+				>
+				["at0003"] = <
+					text = <"Beskrivelse">
+					description = <"Nærmere beskrivelse om hvor pasienten skal og/eller kommentarer til forflytningen.">
+				>
+				["at0004"] = <
+					text = <"Oppfølging angitt">
+					description = <"Videre oppfølging er angitt ">
+				>
+			>
+		>
+		["nb"] = <
+			items = <
+				["at0000"] = <
+					text = <"Skal til">
+					description = <"Angir videre oppfølging for pasient ved akuttmottaket på OUS">
+				>
+				["at0001"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Skal til">
+					description = <"Behandlingssted pasientens er planlagt til. Behøver ikke være meldt. ">
+				>
+				["at0003"] = <
+					text = <"Beskrivelse">
+					description = <"Nærmere beskrivelse om hvor pasienten skal og/eller kommentarer til forflytningen.">
+				>
+				["at0004"] = <
+					text = <"Oppfølging angitt">
+					description = <"Videre oppfølging er angitt ">
+				>
+			>
+		>
+	>
