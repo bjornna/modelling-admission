@@ -50,6 +50,11 @@
           },
           "codeString" : "nb"
         },
+        "purpose" : "Shared template for the summary of the clinical process in the ward when admitting the patients",
+        "keywords" : [ "admission, emergency" ],
+        "use" : "Used to record summary data of the clinical process. Then data will be used in ward/patient lists to get an overview. ",
+        "misuse" : "Not for the primary clinical data like NEWS, Pulse, Triage, etc. ",
+        "copyright" : "DIPS AS",
         "originalResourceUri" : { },
         "otherDetails" : {
           "notes" : "Generated automatically by Adl Designer"
