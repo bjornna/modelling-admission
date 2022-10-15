@@ -15,12 +15,6 @@ language
 				["name"] = <"?">
 			>
 		>
-		["no"] = <
-			language = <[ISO_639-1::no]>
-			author = <
-				["name"] = <"?">
-			>
-		>
 	>
 
 description
@@ -32,11 +26,6 @@ description
 	>
 	lifecycle_state = <"0">
 	details = <
-		["no"] = <
-			language = <[ISO_639-1::no]>
-			purpose = <"Angir status for pasient ">
-			use = <"Spesialiseres til ulike spesifikke statuser - som pasientstatus, rad.status og lab.status">
-		>
 		["nb"] = <
 			language = <[ISO_639-1::nb]>
 			purpose = <"Angir status for pasient ">
@@ -49,7 +38,7 @@ description
 		>
 	>
 	other_details = <
-		["MD5-CAM-1.0.1"] = <"d78164f4e8cb9c009a5e28d7b1ffcaab">
+		["MD5-CAM-1.0.1"] = <"7047de4624cdeea1c0eecf144ebe1645">
 		["build_uid"] = <"2fbb63e0-f4ed-3711-9765-3602a283a8e4">
 	>
 
@@ -133,30 +122,6 @@ ontology
 				["at0003"] = <
 					text = <"Status changed">
 					description = <"**(nb)">
-				>
-			>
-		>
-		["no"] = <
-			items = <
-				["at0000.1"] = <
-					text = <"Status">
-					description = <"Angir status for pasient ">
-				>
-				["at0000"] = <
-					text = <"Status">
-					description = <"Angir status for pasient ">
-				>
-				["at0001"] = <
-					text = <"Tree">
-					description = <"@ internal @">
-				>
-				["at0002"] = <
-					text = <"Status">
-					description = <"Angir nåværende status for pasienten">
-				>
-				["at0003"] = <
-					text = <"Status satt">
-					description = <"*">
 				>
 			>
 		>
