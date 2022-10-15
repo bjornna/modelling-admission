@@ -24,7 +24,7 @@
       "Sign off" : "",
       "Speciality" : "",
       "User roles" : "",
-      "MD5-CAM-1.0.1" : "0ad1da3bd0cdd7664a4e257dc07f82f2",
+      "MD5-CAM-1.0.1" : "c997baab4b1e71b0eae28aac21334132",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5"
     },
     "details" : {
@@ -255,7 +255,50 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "cda1ff34c152741b815a43bc565617aa"
       },
-      "details" : { }
+      "details" : {
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "Angir status for pasient ",
+          "keywords" : [ ],
+          "use" : "Spesialiseres til ulike spesifikke statuser - som pasientstatus, rad.status og lab.status",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "Defines status of patient ",
+          "keywords" : [ ],
+          "use" : "Will be specialised to concrete status information, e.g. radiology status",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "no" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "no"
+          },
+          "purpose" : "Angir status for pasient ",
+          "keywords" : [ ],
+          "use" : "Spesialiseres til ulike spesifikke statuser - som pasientstatus, rad.status og lab.status",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-ACTION.emergency_status-patient.v1",
     "differential" : true,
@@ -316,7 +359,52 @@
       "conceptCode" : "at0000.1",
       "termDefinitions" : {
         "nb" : { },
-        "en" : { }
+        "en" : {
+          "at0001" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "*Tree(nb)",
+            "description" : "*@ internal @(nb)"
+          },
+          "at0002" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002",
+            "text" : "*Status(nb)",
+            "description" : "*Angir nåværende status for pasienten(nb)"
+          },
+          "at0003" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003",
+            "text" : "*Status satt(nb)",
+            "description" : "**(nb)"
+          },
+          "at0002.0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002",
+            "text" : "*Status(nb)",
+            "description" : "*Angir nåværende status for pasienten(nb)"
+          },
+          "at0001.0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "*Tree(nb)",
+            "description" : "*@ internal @(nb)"
+          }
+        },
+        "no" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000",
+            "text" : "Status",
+            "description" : "Angir status for pasient "
+          },
+          "at0000.1.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000",
+            "text" : "Status",
+            "description" : "Angir status for pasient "
+          }
+        }
       },
       "termBindings" : {
         "Dips" : {
@@ -350,6 +438,18 @@
         "name" : "?"
       },
       "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "no"
+      },
+      "author" : {
+        "name" : "?"
+      },
+      "otherDetails" : { }
     } ]
   }, {
     "@type" : "TEMPLATE_OVERLAY",
@@ -364,7 +464,21 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "8e8a2a1a8abacfeb3b795c562a101077"
       },
-      "details" : { }
+      "details" : {
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "Ansvarlig lege som definert for Akuttmottaket ved OUS",
+          "keywords" : [ ],
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-ACTION.emergency_responsible_doctor.v1",
     "differential" : true,
@@ -460,7 +574,34 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "66DD3B7C75AD0F3356AB8D405A73354E"
       },
-      "details" : { }
+      "details" : {
+        "no" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "no"
+          },
+          "purpose" : "Kontaktinformasjon for ansvarlig sykepleier for en angitt pasient",
+          "keywords" : [ ],
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "Kontaktinformasjon for ansvarlig sykepleier for en angitt pasient",
+          "keywords" : [ ],
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-ACTION.emergency_nurse_phone.v1",
     "differential" : true,
@@ -569,7 +710,34 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "329c89637bd406eff572f777605a2bdc"
       },
-      "details" : { }
+      "details" : {
+        "no" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "no"
+          },
+          "purpose" : "Angir hvilken spesialitet pasienten behandles ved i Akuttmottaket",
+          "keywords" : [ ],
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "Angir hvilken spesialitet pasienten behandles ved i Akuttmottaket",
+          "keywords" : [ ],
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-EVALUATION.emergency_speciality.v1",
     "differential" : true,
@@ -680,7 +848,50 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "e216877a23001a946245b5f54042ea79"
       },
-      "details" : { }
+      "details" : {
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "Angir status for pasient ",
+          "keywords" : [ ],
+          "use" : "Spesialiseres til ulike spesifikke statuser - som pasientstatus, rad.status og lab.status",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "Defines status of patient ",
+          "keywords" : [ ],
+          "use" : "Will be specialised to concrete status information, e.g. radiology status",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "no" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "no"
+          },
+          "purpose" : "Angir status for pasient ",
+          "keywords" : [ ],
+          "use" : "Spesialiseres til ulike spesifikke statuser - som pasientstatus, rad.status og lab.status",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-ACTION.emergency_status-lab.v1",
     "differential" : true,
@@ -741,7 +952,21 @@
       "conceptCode" : "at0000.1",
       "termDefinitions" : {
         "nb" : { },
-        "en" : { }
+        "en" : { },
+        "no" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000",
+            "text" : "Status",
+            "description" : "Angir status for pasient "
+          },
+          "at0000.1.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000",
+            "text" : "Status",
+            "description" : "Angir status for pasient "
+          }
+        }
       },
       "termBindings" : {
         "Dips" : {
@@ -775,6 +1000,18 @@
         "name" : "?"
       },
       "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "no"
+      },
+      "author" : {
+        "name" : "?"
+      },
+      "otherDetails" : { }
     } ]
   }, {
     "@type" : "TEMPLATE_OVERLAY",
@@ -789,7 +1026,50 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "7047de4624cdeea1c0eecf144ebe1645"
       },
-      "details" : { }
+      "details" : {
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "Angir status for pasient ",
+          "keywords" : [ ],
+          "use" : "Spesialiseres til ulike spesifikke statuser - som pasientstatus, rad.status og lab.status",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "Defines status of patient ",
+          "keywords" : [ ],
+          "use" : "Will be specialised to concrete status information, e.g. radiology status",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "no" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "no"
+          },
+          "purpose" : "Angir status for pasient ",
+          "keywords" : [ ],
+          "use" : "Spesialiseres til ulike spesifikke statuser - som pasientstatus, rad.status og lab.status",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-ACTION.emergency_status-rad.v1",
     "differential" : true,
@@ -850,7 +1130,52 @@
       "conceptCode" : "at0000.1",
       "termDefinitions" : {
         "nb" : { },
-        "en" : { }
+        "en" : {
+          "at0001" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "*Tree(nb)",
+            "description" : "*@ internal @(nb)"
+          },
+          "at0002" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002",
+            "text" : "*Status(nb)",
+            "description" : "*Angir nåværende status for pasienten(nb)"
+          },
+          "at0003" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003",
+            "text" : "*Status satt(nb)",
+            "description" : "**(nb)"
+          },
+          "at0002.0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002",
+            "text" : "*Status(nb)",
+            "description" : "*Angir nåværende status for pasienten(nb)"
+          },
+          "at0001.0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "*Tree(nb)",
+            "description" : "*@ internal @(nb)"
+          }
+        },
+        "no" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000",
+            "text" : "Status",
+            "description" : "Angir status for pasient "
+          },
+          "at0000.1.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000",
+            "text" : "Status",
+            "description" : "Angir status for pasient "
+          }
+        }
       },
       "termBindings" : {
         "Dips" : {
@@ -884,6 +1209,18 @@
         "name" : "?"
       },
       "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "no"
+      },
+      "author" : {
+        "name" : "?"
+      },
+      "otherDetails" : { }
     } ]
   }, {
     "@type" : "TEMPLATE_OVERLAY",
@@ -898,7 +1235,34 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "54A49BB386F55F16DA078C4273DF1D15"
       },
-      "details" : { }
+      "details" : {
+        "no" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "no"
+          },
+          "purpose" : "Angir videre oppfølging for pasient ved akuttmottaket på OUS",
+          "keywords" : [ ],
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "Angir videre oppfølging for pasient ved akuttmottaket på OUS",
+          "keywords" : [ ],
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-ACTION.emergency_follow_up.v1",
     "differential" : true,
