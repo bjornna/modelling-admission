@@ -6,14 +6,6 @@ concept
 
 language
 	original_language = <[ISO_639-1::nb]>
-	translations = <
-		["no"] = <
-			language = <[ISO_639-1::no]>
-			author = <
-				["name"] = <"Bjørn Næss">
-			>
-		>
-	>
 
 description
 	original_author = <
@@ -24,17 +16,13 @@ description
 	>
 	lifecycle_state = <"0">
 	details = <
-		["no"] = <
-			language = <[ISO_639-1::no]>
-			purpose = <"Merknad for bruk ved Akuttmottaket">
-		>
 		["nb"] = <
 			language = <[ISO_639-1::nb]>
 			purpose = <"Merknad for bruk ved Akuttmottaket">
 		>
 	>
 	other_details = <
-		["MD5-CAM-1.0.1"] = <"f68138e07df51beeca9ce73ffee0d4a8">
+		["MD5-CAM-1.0.1"] = <"40cd5450905b6d607f16c61f3611f04a">
 		["build_uid"] = <"ead873c8-5eb0-3bb0-acc5-3465a5eacbde">
 	>
 
@@ -73,38 +61,6 @@ definition
 
 ontology
 	term_definitions = <
-		["no"] = <
-			items = <
-				["at0000"] = <
-					text = <"Akuttmerknad">
-					description = <"Merknad for bruk ved Akuttmottaket">
-				>
-				["at0001"] = <
-					text = <"Tree">
-					description = <"@ internal @">
-				>
-				["at0002"] = <
-					text = <"Felles merknad">
-					description = <"*">
-				>
-				["at0003"] = <
-					text = <"F.merknad">
-					description = <"Fritekst">
-				>
-				["at0004"] = <
-					text = <"Sensitiv merknad">
-					description = <"*">
-				>
-				["at0005"] = <
-					text = <"S.merknad">
-					description = <"Fritekst">
-				>
-				["at0006"] = <
-					text = <"Kodeverk">
-					description = <"Merknad med oppslag i kodeverk">
-				>
-			>
-		>
 		["nb"] = <
 			items = <
 				["at0000"] = <
