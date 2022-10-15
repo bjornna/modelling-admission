@@ -6,14 +6,6 @@ concept
 
 language
 	original_language = <[ISO_639-1::nb]>
-	translations = <
-		["no"] = <
-			language = <[ISO_639-1::no]>
-			author = <
-				["name"] = <"?">
-			>
-		>
-	>
 
 description
 	original_author = <
@@ -21,16 +13,12 @@ description
 	>
 	lifecycle_state = <"0">
 	details = <
-		["no"] = <
-			language = <[ISO_639-1::no]>
-			purpose = <"Callingnummer for leger ved Akuttmottaket">
-		>
 		["nb"] = <
 			language = <[ISO_639-1::nb]>
 		>
 	>
 	other_details = <
-		["MD5-CAM-1.0.1"] = <"B77DFEF809E996C0CCC2BA7373023E53">
+		["MD5-CAM-1.0.1"] = <"3614a23e4c9e177b97458249cf91605a">
 		["build_uid"] = <"25cbff6b-0e77-3d06-850e-8a4527d727f8">
 	>
 
@@ -74,30 +62,6 @@ definition
 
 ontology
 	term_definitions = <
-		["no"] = <
-			items = <
-				["at0000"] = <
-					text = <"Calling leger">
-					description = <"Legecalling for Akuttmottak">
-				>
-				["at0001"] = <
-					text = <"Tree">
-					description = <"@ internal @">
-				>
-				["at0002"] = <
-					text = <"Vakthavende calling">
-					description = <"Calling lege ved Akuttmottak">
-				>
-				["at0003"] = <
-					text = <"Privat calling">
-					description = <"Privat calling lege">
-				>
-				["at0004"] = <
-					text = <"Calling lege">
-					description = <"Calling lege">
-				>
-			>
-		>
 		["nb"] = <
 			items = <
 				["at0000"] = <
