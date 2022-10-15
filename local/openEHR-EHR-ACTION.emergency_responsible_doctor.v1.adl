@@ -1,0 +1,116 @@
+archetype (adl_version=1.4; uid=84caa7b4-82e1-3453-a79d-9a5d687f6779)
+	openEHR-EHR-ACTION.emergency_responsible_doctor.v1
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::nb]>
+	translations = <
+		["no"] = <
+			language = <[ISO_639-1::no]>
+			author = <
+				["name"] = <"Bjørn Næss">
+			>
+		>
+	>
+
+description
+	original_author = <
+		["date"] = <"2014-02-26">
+		["name"] = <"Bjørn Næss">
+		["organisation"] = <"DIPS ASA">
+		["email"] = <"bna@dips.no">
+	>
+	lifecycle_state = <"0">
+	details = <
+		["no"] = <
+			language = <[ISO_639-1::no]>
+			purpose = <"Ansvarlig lege som definert for Akuttmottaket ved OUS">
+		>
+		["nb"] = <
+			language = <[ISO_639-1::nb]>
+			purpose = <"Ansvarlig lege som definert for Akuttmottaket ved OUS">
+		>
+	>
+	other_details = <
+		["MD5-CAM-1.0.1"] = <"7b8f949938c1be2294ced1ec02b5d9e3">
+		["build_uid"] = <"deeec079-d3d3-3422-9243-5773c6ac9afc">
+	>
+
+definition
+	ACTION[at0000] matches {    -- Ansvarlig lege
+		ism_transition matches {
+			ISM_TRANSITION[at0003] matches {    -- Utført
+				current_state matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[openehr::532]
+						}
+					}
+				}
+				careflow_step matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::at0003]    -- Utført
+						}
+					}
+				}
+			}
+		}
+		description matches {
+			ITEM_TREE[at0001] matches {    -- Tree
+				items cardinality matches {0..*; unordered} matches {
+					ELEMENT[at0002] occurrences matches {0..1} matches {    -- Ansv.lege
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["no"] = <
+			items = <
+				["at0000"] = <
+					text = <"Ansvarlig lege">
+					description = <"Ansvarlig lege som definert for Akuttmottaket ved OUS">
+				>
+				["at0001"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Ansv.lege">
+					description = <"*">
+				>
+				["at0003"] = <
+					text = <"Utført">
+					description = <"Ansvarlig lege er satt ">
+				>
+			>
+		>
+		["nb"] = <
+			items = <
+				["at0000"] = <
+					text = <"Ansvarlig lege">
+					description = <"Ansvarlig lege som definert for Akuttmottaket ved OUS">
+				>
+				["at0001"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Ansv.lege">
+					description = <"*">
+				>
+				["at0003"] = <
+					text = <"Utført">
+					description = <"Ansvarlig lege er satt ">
+				>
+			>
+		>
+	>
