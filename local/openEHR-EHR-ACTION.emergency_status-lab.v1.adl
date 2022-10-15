@@ -9,12 +9,6 @@ concept
 language
 	original_language = <[ISO_639-1::nb]>
 	translations = <
-		["no"] = <
-			language = <[ISO_639-1::no]>
-			author = <
-				["name"] = <"?">
-			>
-		>
 		["en"] = <
 			language = <[ISO_639-1::en]>
 			author = <
@@ -32,11 +26,6 @@ description
 	>
 	lifecycle_state = <"0">
 	details = <
-		["no"] = <
-			language = <[ISO_639-1::no]>
-			purpose = <"Angir status for pasient ">
-			use = <"Spesialiseres til ulike spesifikke statuser - som pasientstatus, rad.status og lab.status">
-		>
 		["nb"] = <
 			language = <[ISO_639-1::nb]>
 			purpose = <"Angir status for pasient ">
@@ -49,7 +38,7 @@ description
 		>
 	>
 	other_details = <
-		["MD5-CAM-1.0.1"] = <"889ee14fcf0bca8d2488075052461432">
+		["MD5-CAM-1.0.1"] = <"e216877a23001a946245b5f54042ea79">
 		["build_uid"] = <"d32f60b8-eca9-3339-be12-9aa920eff531">
 	>
 
@@ -88,39 +77,15 @@ definition
 
 ontology
 	term_definitions = <
-		["no"] = <
-			items = <
-				["at0000"] = <
-					text = <"Status">
-					description = <"Angir status for pasient ">
-				>
-				["at0000.1"] = <
-					text = <"Lab.status">
-					description = <"Angir status på laboratorieprøver for pasienten">
-				>
-				["at0001"] = <
-					text = <"Tree">
-					description = <"@ internal @">
-				>
-				["at0002"] = <
-					text = <"Status">
-					description = <"Angir nåværende status for pasienten">
-				>
-				["at0003"] = <
-					text = <"Status satt">
-					description = <"*">
-				>
-			>
-		>
 		["nb"] = <
 			items = <
-				["at0000"] = <
-					text = <"Status">
-					description = <"Angir status for pasient ">
-				>
 				["at0000.1"] = <
 					text = <"Lab.status">
 					description = <"Angir status på laboratorieprøver for pasienten">
+				>
+				["at0000"] = <
+					text = <"Status">
+					description = <"Angir status for pasient ">
 				>
 				["at0001"] = <
 					text = <"Tree">
@@ -138,13 +103,13 @@ ontology
 		>
 		["en"] = <
 			items = <
+				["at0000.1"] = <
+					text = <"Lab.status">
+					description = <"Angir status på laboratorieprøver for pasienten">
+				>
 				["at0000"] = <
 					text = <"Status">
 					description = <"Defines status of patient at emergency ward ">
-				>
-				["at0000.1"] = <
-					text = <"*Lab.status(nb)">
-					description = <"*Angir status på laboratorieprøver for pasienten(nb)">
 				>
 				["at0001"] = <
 					text = <"*Tree(nb)">
